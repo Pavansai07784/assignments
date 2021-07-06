@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="inline.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <title> Inline- Property </title>
+</head>
+
+<body>
+    <section id="flex-container">
+
+        <h1 class="heading">
+            FLEX
+        </h1>
+        <div class="container">
+            <h3>Description</h3>
+            <hr>
+            <ul>
+                <li>Flex utility can be used to manage the layout, alignment, grid columns, navigation and other
+                    components
+                    of
+                    the page.</li>
+                <li> It makes easy to design layout structure without using float or positioning.</li>
+            </ul>
+
+
+            <h3 class="flex-behaviors">Flex Behaviors and Direction</h3>
+            <hr>
+            <ul class="behaviours">
+                <h4>Flex Behaviors </h4>
+                <li>The flexbox display utilities like d-flex and d-inline-flex to display the flexbox container and
+                    children
+                    elements into flex items. </li>
+                <div class="d-flex p-2 bg-light">
+                    <p class="white-text">This is flex container, uses the 'd-flex' class</p>
+                </div>
+                <br>
+                <div class="d-inline-flex p-2 bg-light">
+                    <p class="white-text">This is inline flexbox container, uses the 'd-inline-flex' class</p>
+                </div>
+            </ul>
+
+
+
+            <h4>Flex Direction</h4>
+            <ul>
+                <li>You can set the direction of flex items in horizontal direction and vertical
+                    direction by using .flex-row (use .flex-row-reverse to display horizontal direction from the
+                    opposite
+                    side)
+                    and .flex-column (use .flex-column-reverse to display vertical direction from the opposite side)
+                    classes
+                    respectively as shown in the below example</li>
+            </ul>
+            <h5 style="text-align:center ;color: whitesmoke;padding:30px 0px 10px 0px; ">Horizontal Direction</h5>
+            <h6 style="padding-bottom: 15px;">Flex-row :</h6>
+            <div class="d-inline-flex flex-row bg-light mb-3">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1
+                </div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2
+                </div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3
+                </div>
+            </div>
+            <h6 style="padding-bottom: 15px;">Flex-row-reverse :</h6>
+            <div class="d-inline-flex flex-row-reverse bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">
+                    Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">
+                    Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">
+                    Item 3</div>
+            </div>
+            <br>
+
+            <h5 style="text-align: center;color: whitesmoke ; padding-top:15px;">Vertical Direction</h5>
+            <h6 style="padding-bottom:15px;">Flex-column:</h6>
+            <div class="d-inline-flex flex-column bg-light mb-3">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1
+                </div>
+                <div class="p-2" style="background-color:#a9a9a9;color:black;">Item 2
+                </div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3
+                </div>
+            </div>
+            <h6 style="padding:15px 0px 15px 0px;">Flex-column-reverse:</h6>
+            <div class="d-inline-flex flex-column-reverse bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">
+                    Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">
+                    Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">
+                    Item 3</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class=" container order">
+        <h3 style="padding-bottom: 15px;text-align: center;margin-top: 50px;">Flex-order:</h3>
+        <h4 style="margin-bottom: 50px;">
+            <ul>
+                <li>The order property controls the order in which they appear in the flex container.</li>
+            </ul>
+        </h4>
+        <div class="order-container">
+            <div class="box-1">
+                <h5>item1</h5>
+            </div>
+            <div class="box-2">
+                <h5>item2</h5>
+            </div>
+            <div class="box-3">
+                <h5>item3</h5>
+            </div>
+        </div>
+
+        <div class="order-container">
+            <div class="box-4">
+                <h5>item1</h5>
+            </div>
+            <div class="box-5">
+                <h5>item2</h5>
+            </div>
+            <div class="box-6">
+                <h5>item3</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

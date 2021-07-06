@@ -1,0 +1,31 @@
+.googlelogo{
+    width: 100px;
+    margin-left: 200px;
+}
+
+.navbar{
+    background-color:white;
+    
+}
+
+.form-inline{
+    margin-right:250px;
+}
+#searchbox{
+    height:30px;
+    
+    position: absolute;
+    border:orchid;
+}
+#text{
+    line-height:20px;
+    outline: none;
+    border: none;
+    width:150px;
+}
+.fa-search{
+ color: black;
+ opacity: 0.5;
+ line-height: 40px;
+ p
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+li {
+    margin: 0px 70px;
+}
+
+.second-section{
+    height:85vh;
+    background-color: gray;
+   
+}
+.matter{
+  
+    padding: 150px 0px 0px ; 
+    color: white;  
+}
+.image img{
+    width:5 00px;
+  
+}

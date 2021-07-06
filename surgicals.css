@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+
+.navbar-nav li {
+    margin: 0px 100px;
+}
+.image img{
+    margin-left: 100px;
+   width:500px;
+   margin-top:150px;
+   
+   
+}
+h1{
+    margin-top: 150px;
+    font-size: 900;
+}
+
+.second{
+    background-color: cadetblue;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+}
+.heading{
+font-weight: 700;
+color: white;
+margin-top: 250px;
+}
+.cards{
+display: flex;
+justify-content: space-around;
+height:60vh ;
+}
+footer{
+display: flex;
+justify-content: space-around;
+padding: 50px;
+background-color: cadetblue;
+color: white;
+}
+footer p{
+    font-weight: 600;
+}

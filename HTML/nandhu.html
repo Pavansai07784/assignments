@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+         TODO list
+        </title>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <style>
+            
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #ffff;
+  background: rgb(142, 73, 232);
+}
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(to bottom, #68bd 0%, #497B 100%);
+}
+.wrapper{
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 200px auto;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px rgba(2,2,0,2.1);
+}
+.wrapper header{
+  font-size: 30px;
+  font-weight: 550;
+}
+.wrapper .inputField{
+  margin: 20px 20px;
+  width: 100%;
+  display:flex;
+  height: 45px;
+}
+.inputField input{
+  width: 85%;
+  height: 100%;
+  outline:none;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 2px;
+  transition: all 0.3s ease;
+}
+.inputField input:focus{
+  border-color:maroon;
+}
+.inputField button{
+  width: 45px;
+  height: 100%;
+  border: floralwhite;
+  color:rosybrown;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background:red;
+  cursor: pointer;
+  border-radius: 30px;
+  pointer-events:visibleStroke;
+  transition: all 0.3s ease;
+}
+.inputField button:hover,
+.footer button:hover{
+  background:lightslategray;
+}
+.inputField button.active{
+  opacity: 0;
+  pointer-events: auto;
+}
+.wrapper #tasks{
+  max-height: 250px;
+  overflow-y: auto;
+}
+#tasks li{
+ position: relative;
+  list-style: none;
+  height: 45px;
+  
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+        </style>
+    </head>
+    <body>
+     
+        <div class="wrapper">
+            <header>Todo List</header>
+            <div class="inputField">
+              <input type="text" placeholder="Enter the task" id="task">
+              <button onclick="addTask()">
+                       <i class="fas fa-plus-circle" style="font-size: 45px;color:beige"></i>
+                    </button>
+            </div>
+
+       <ul id="tasks">
+
+       </ul>
+    </div>
+        <script>
+            var allTasks=[];
+            function addTask(){
+                event.preventDefault();
+               var task_value= document.getElementById("task").value;
+               var task={
+                   taskId:1,
+                    taskname:task_value
+               }
+               allTasks.push(task);
+               displayTasks();
+            }
+            function displayTasks(){                //for display purpose we are taking the another function
+               
+                var tasks =document.getElementById("tasks");
+               
+                tasks.innerHTML="";                 //empty purpose donot readd the list
+               
+                allTasks.forEach(function(task){             //for adding one by one 
+               
+                    tasks.innerHTML=tasks.innerHTML+"<li>"+task.taskname+" &nbsp; &nbsp; taskID "+
+                        task.taskId+"<input id='cb' onclick='x("+task.taskId +")' type='checkbox'>"+"</li>";
+                })
+            }   
+            function x(taskId){
+                event.preventDefault();
+                
+                var cb = document.getElementById('cb');
+                console.log("taskId",taskId);
+                if(cb.checked==true){
+                    alert("strike it ");
+                    console.log("Before:allTasks",allTasks);
+                    
+                    allTasks.forEach(function(task){  
+                        if(task.taskId == taskId){
+                          task.taskname = "<del>"+task.taskname+"</del> "
+                         }
+                    })
+                    displayTasks();
+                    console.log("After:allTasks",allTasks);
+                }
+                else{
+                    alert("unstrike it");
+                }
+            }
+           
+            </script>
+    </body>
+</html>

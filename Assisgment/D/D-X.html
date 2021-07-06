@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro {
+            float: none;
+            z-index: 0;
+            color: #fff;
+            font-size: 55px;
+            font-family: sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-top: 100px;
+        }
+
+        .navbar-toggler {
+            background-color: gray;
+            margin: auto;
+            margin-right: 15px;
+        }
+
+        .navbar-brand>img {
+            height: 65px;
+            width: 80%;
+            margin: 0;
+            margin-left: 0%;
+            padding-left: 25px;
+        }
+
+        .navbar-collapse {
+            padding-right: 180px;
+        }
+
+        .nav-item {
+            padding: 5px;
+        }
+
+        .jumbotron {
+            margin-bottom: 0;
+            background-image: url("https://images.hdqwalls.com/download/statue-of-liberty-t6-5120x2880.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            margin-right: 0;
+        }
+
+        .intro {
+            float: none;
+            color: #fff;
+            margin-top: 150px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .button {
+            padding: 13px 35px 13px 35px;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 15px;
+            margin-right: 40px;
+        }
+
+        .art1 h4 {
+            padding-top: 85px;
+            padding-bottom: 85px;
+            color: #fff;
+            text-align: center;
+            margin: auto 200px;
+            font-family: sans-serif;
+            line-height: 200%;
+        }
+
+        .background2 {
+            background-color: rgba(52, 210, 147, 0.8);
+        }
+
+        /* flexbox */
+
+        .gridss {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 50px;
+            width: 1100;
+            margin-top: -90px;
+        }
+
+        .gridss img {
+            width: 450px;
+            height: 450px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .class {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background: #e96656;
+            font-family: "Lato", Helvetica, sans-serif;
+        }
+
+        .backgroundgreen {
+            background-color: rgba(52, 210, 147, 0.8);
+
+        }
+
+        .text1 {
+            max-width: 800px;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            line-height: 34px;
+            text-align: center;
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+        }
+
+        .white-text {
+            text-align: center;
+            color: black;
+            margin: auto;
+        }
+
+        .digital-t {
+            font-size: 50px;
+            font-weight: 300;
+            line-height: normal;
+            text-align: end;
+        }
+
+        .heading {
+            margin: auto;
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            color: #fff;
+            font-size: 340px;
+            font-weight: normal;
+            place-items: center;
+        }
+
+        .col-md-9 {
+            position: relative;
+            min-height: 1px;
+            padding-left: 500px;
+            padding-right: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+            text-align: center;
+            font-family: "Lato", Helvetica, sans-serif !important;
+        }
+
+        .background {
+            background-color: #FA8072;
+        }
+
+        .form {
+            height: 95vh;
+            width: 800px;
+        }
+
+        footer {
+            background-color: #272727;
+            color: gray;
+            text-align: center;
+        }
+
+        .footer1 {
+            display: inline-block;
+            padding: 35px;
+            margin: auto;
+            padding-top: 55px;
+            float: left;
+        }
+
+        .copyright {
+            padding-top: 68px;
+            padding-bottom: 68px;
+            background: #171717;
+        }
+
+        /* aboutus */
+
+        .aboutus {
+            background-color: #272727;
+            padding-top: 25px;
+            margin-top: auto;
+            padding-bottom: 45px;
+        }
+
+        .middle {
+            color: #fff;
+            text-align: center;
+            padding-top: 85px;
+            ;
+        }
+
+        .firstcol {
+            padding-top: 40px;
+        }
+
+        .about {
+            font-family: monospace;
+            font-weight: 900;
+            font-size: 45px;
+            display: inline-block;
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+            font-size: 45px;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+
+        .secondcol {
+            padding-top: 20px;
+            color: gray;
+        }
+
+        .v1 h3 {
+            padding: 10px;
+            padding-left: 40%;
+            text-align: left;
+        }
+
+        .v1 p {
+            color: gray;
+            padding-left: 40%;
+            padding-bottom: 0%;
+            text-align: left;
+        }
+
+        .first {
+            background-color: #FA8072;
+        }
+
+        .second {
+            font-family: sans-serif;
+            font-weight: 900px;
+            text-align: center;
+        }
+
+        /* latestnews */
+
+        .newsheading1 {
+            text-align: center;
+            font-weight: 100px;
+            text-transform: uppercase;
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+        .news1 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-top: 70px;
+        }
+
+        .s-img {
+            max-width: 100%;
+        }
+
+        .carousel-item {
+            padding: 40px 40px;
+        }
+
+
+
+        .con {
+            height: 85vh;
+        }
+
+        code .btns {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 25;
+            -moz-border-radius: 25;
+            border-radius: 25px;
+            font-family: Georgia;
+            color: #080108;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: solid #1f628d 2px;
+            text-decoration: none;
+        }
+
+        .btns:hover {
+            background: #85a4b8;
+            background-image: -webkit-linear-gradient(top, #85a4b8, #48d4c6);
+            background-image: -moz-linear-gradient(top, #85a4b8, #48d4c6);
+            background-image: -ms-linear-gradient(top, #85a4b8, #48d4c6);
+            background-image: -o-linear-gradient(top, #85a4b8, #48d4c6);
+            background-image: linear-gradient(to bottom, #85a4b8, #48d4c6);
+            text-decoration: none;
+        }
+
+        .par {
+            width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            .intro {
+                font-size: 45px;
+                line-height: 55px;
+            }
+
+            .digital-t {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro {
+                font-size: 32px;
+                line-height: 37px;
+            }
+
+            .digital-t {
+                text-align: center;
+            }
+
+            .art1 h4 {
+                line-height: normal;
+                margin: auto 10px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .intro {
+                font-size: 22px;
+                line-height: 30px;
+            }
+
+            .digital-t {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            .gridss {
+                margin-top: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .digital-t {
+                text-align: center;
+            }
+
+            .art1 h4 {
+                line-height: normal;
+                margin: auto 10px;
+            }
+
+        }
+
+        @media(max-width:580px) {
+            .con {
+                height: 95vh;
+            }
+
+            .digital-t {
+                text-align: center;
+            }
+
+            .par {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .art1 h4 {
+                line-height: normal;
+                margin: auto 10px;
+            }
+
+            .button {
+                margin: 0px auto;
+            }
+        }
+    </style>
+
+    <title>DIGITAL X GEEKS</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+
+                <img width="116" height="85" src="http://digitalxgeeks.com/wp-content/uploads/2020/04/DX.jpg">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link c" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active c">
+                        <a class="nav-link" href="asana.html">Services</a>
+                    </li>
+                    <li class="nav-item active c">
+                        <a class="nav-link" href="#">Freelancers</a>
+                    </li>
+                    <li class="nav-item active c">
+                        <a class="nav-link" href="#">Free Career Guidance</a>
+                    </li>
+                    <li class="nav-item active c">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle c" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Careers</a>
+                            <a class="dropdown-item" href="#">Privacy Statement</a>
+                            <a class="dropdown-item" href="#">Refund Policy</a>
+                            <a class="dropdown-item" href="#">Terms Of Service</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- jumbotron -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="intro ">TRANSFORM AND OPTIMIZE YOUR ORGANIZATION WITH DIGITALX</h1>
+            <div class="button" style="padding-top:30px;"><a href="http://digitalxgeeks.com/services/"
+                    class="btn btn-primary button " style="background-color: #1e9e6b; text-decoration: none;">DIGITAL
+                    TRANSFORMATION</a>
+            </div>
+        </div>
+    </div>
+    <!--flexbox -->
+
+
+    <div class="gridss">
+        <div class="coloumn1">
+            <img src="https://www.tcs.com/content/dam/tcs/images/home-innovate/home-refresh-jan-2021/finance-needs-to-accelerate-1330x1270.jpg"
+                alt="">
+
+        </div>
+        <div class="coloumn2">
+            <img src="https://www.tcs.com/content/dam/tcs/images/home-innovate/home-refresh-sept-2020/cfo-study-hd.jpg"
+                alt="">
+        </div>
+        <div class="coloumn3">
+            <img src="https://www.tcs.com/content/dam/tcs/images/home-innovate/home-refresh-sept-2020/cybersecurity-hd.jpg"
+                alt="">
+        </div>
+
+    </div>
+
+
+    <!-- green background -->
+    <div class="container-fluid background2">
+        <div class="row" style="justify-content: center;">
+            <div class="col col-lg-7">
+                <h4 class="display-6"
+                    style="margin:130px 0px; text-align:center;color: white;line-height:35px;font-weight:400;padding: 50px 0px ">
+                    Artificial intelligence is impacting the way in which enterprises engage with consumers. AI is no
+                    more science fiction and is already being adopted by public and private organisations globally. For
+                    instance, researchers are leveraging AI to make treatment for cancer more bearable, AI is used by
+                    financial services companies to detect fraud and enhance customer experience, by manufacturers to
+                    streamline supply chain, & predictive maintenance, and retailers to provide personalised shopping
+                    experience.
+                </h4>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- aboutus -->
+    <!-- Button trigger modal -->
+    <div class="aboutus">
+        <div class="container">
+            <div class="middle">
+                <h1 class="about">
+                    ABOUT US</h1>
+                <p>Optimize Industries with DX</p>
+                <div class="row">
+                    <div class=" firstcol col-sm">
+                        <h3 class="digital-t">
+                            Digital <br>
+                            Transformation</h3>
+                    </div>
+                    <div class="secondcol col-sm">
+                        <p>Provide services on DataScience, AI, ML, Devops, RPA, AWS, Blockchain, AR</p>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="v1">
+                            <h3>
+                                BLOCKCHAIN</h3>
+                            <h3>DEVOPS
+                            </h3>
+                            <p> Optimization</p>
+                            <h3>AI
+                            </h3>
+                            <p>AI and DataScience</p>
+                            <h3>ROBOTIC PROCESS AUTOMATION
+                            </h3>
+                            <p>Intelligent PA</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+
+    <div class="formbutton" style="position: fixed; bottom:300px; left: 20px; margin-left:-25px;">
+        <button type="button" class="btns btn" data-toggle="modal" data-target="#exampleModal"
+            style="background-color:gray;">
+            F<br>
+            O<br>
+            R<br>
+            M<br>
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content con">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Form*</h5>
+                    <img src="http://digitalxgeeks.com/wp-content/uploads/2020/04/DX.jpg"
+                        style="width:75px;margin-left:300px;" alt="logo">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row forms">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"
+                                        style="font-weight: bold;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Name*</label>
+                                    <input type="text" class="form-control" style="padding: 10px;">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"
+                                        style="font-weight: bold;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Email*</label>
+                                    <input type="text" class="form-control" style="padding: 10px;">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1"
+                                        style="font-weight: bold;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Country</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>India</option>
+                                        <option>Canada</option>
+                                        <option>Austaralia</option>
+                                        <option>Afghanistan </option>
+                                        <option>South Africa</option>
+                                        <option>Pakisthan</option>
+                                        <option>Bangladesh</option>
+                                        <option>Brazil</option>
+                                        <option>China</option>
+                                        <option>Japan</option>
+                                        <option>Singapore</option>
+                                        <option>Thailand</option>
+                                        <option>Uganda</option>
+                                        <option>Colombia</option>
+                                        <option>Finland</option>
+                                        <option>Geremany</option>
+                                        <option>South-Korea</option>
+                                        <option>iraq</option>
+                                        <option>New Zeland</option>
+                                        <option>Nepal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1"
+                                        style="font-weight: bold;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Phone</label>
+                                    <input type="text" class="form-control" style="padding: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <div class="form-group">
+                                        <h5 style="font-weight: bold;font-family: sans-serif;">
+                                            Meassage*
+                                        </h5>
+                                        <textarea class="form-control" id="exampleFormcontrolTextarea1"
+                                            rows="8"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <button type="submit" class="btn btn-primary btn-dark">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blockchain -->
+    <section class="background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 heading">
+                    <h4>Blockchain technology is transforming most of the industries including Payments,
+                        E-Commerce, Retail and solving major real world problems efficiently. Are you looking for
+                        experty for developing
+                        solutions using Blockchain. Please contact us.
+                    </h4>
+                </div>
+            </div>
+    </section>
+
+    </div> -->
+    <div class="container" style="padding-bottom: 100px;">
+
+        <div class="news1">
+            <h1 style="color: gray; font-weight:900;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                LATEST NEWS</h1>
+
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-3 firstslide">
+                            <div class="sec-img">
+                                <img class="s-img"
+                                    src="http://digitalxgeeks.com/wp-content/uploads/2018/09/LeadingRemoteTeamF.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div>
+                                <h3 class="newsheading1" style="text-align: center;font-weight: 100px;
+                                text-transform: uppercase;
+                                padding-top: 10px;
+                                font-size: 16px;">THE ESSENTIAL STEPS TO LEADING A
+                                    REMOTE TEAM</h3>
+                                <hr style="background-color:green; height:0px;">
+                                <p style="font-weight:200; text-align: center;margin: auto;"> The recent Coronavirus
+                                    Pandemic has
+                                    compelled many
+                                    organisations
+                                    to let their employees work remotely. Many such companies are also
+                                    grappling
+                                    with
+                                    the dilemmas associated with managing teams who are not physically
+                                    present
+                                    at their office.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 firstslide">
+                            <div class="sec-img">
+                                <img class="s-img"
+                                    src="http://digitalxgeeks.com/wp-content/uploads/2020/04/RemoteWorkF.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div>
+                                <h3 class="newsheading1" style="text-align: center;">REMOTE WORK ISNT ABOUT THE FUTURE
+                                    OF
+                                    WORK IT'S ABOUT THE FUTURE OF LIVING</h3>
+                                <hr style="background-color: red; height:0px;">
+                                <p style="font-weight: 200; text-align: center; margin: auto;"> Remote work is a new way
+                                    of living
+                                    Unshackling people
+                                    from sitting in a
+                                    pollution emitting metal box for 2 hours a day commuting to a
+                                    distraction
+                                    factory adult kids club where you waste your days
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 firstslide1">
+                            <div class="sec-img">
+                                <img class="s-img"
+                                    src="http://digitalxgeeks.com/wp-content/uploads/2019/08/about-pristyn-e1574235333114.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div>
+                                <h3 class="newsheading1" style="text-align: center;">LEADING YOUR ORGANISATION TO
+                                    RESPOSIBILE AI</h3>
+                                <hr style="background-color: yellow; height:0px;">
+                                <p style="font-weight: 200; text-align: center; margin: auto;"> CEOs often live by the
+                                    numbers—profit,
+                                    earnings before
+                                    interest and
+                                    taxes,
+                                    shareholder returns. These data often serve as hard evidence of CEO
+                                    success
+                                    or failure, but they’re certainly not the only measures.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 firstslide1">
+                            <div class="sec-img">
+                                <img class="s-img"
+                                    src="http://digitalxgeeks.com/wp-content/uploads/2018/11/blockchain-technology-1.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div>
+                                <h3 class="newsheading1" style="text-align: center;">HOW AND WHY BLOCKCHAIN TECHNOLOGY
+                                    IS
+                                    A THOUGH NUT TO
+                                    CRACK FOR HACKERS</h3>
+                                <hr style="background-color: blue; height:0px;">
+                                <p class="par" style="font-weight: 200; text-align: center;margin: auto;"> The first six
+                                    months of
+                                    2017 saw more
+                                    data
+                                    lost or
+                                    stolen than through
+                                    the
+                                    entire of 2016, standing at 1.9 billion. Litigation, the cost of repair,
+                                    a
+                                    fall in stock prices, a loss in brand value and anxious customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 secondslide">
+                            <img class="d-block w-100"
+                                src="http://digitalxgeeks.com/wp-content/uploads/2018/09/ProofOfStake.png"
+                                alt="Second slide">
+                            <div>
+                                <h3 class="newsheading1" style="text-align: center; margin: auto;">PROOF-OF-STAKE IS A
+                                    REBRANDED VERSION
+                                    OF
+                                    THE OLD
+                                    FINANCIAL SYSTEM</h3>
+                                <hr style="background-color: gray; height:0px;">
+                                <p style="font-weight: 200; text-align: center;"> Over the last few years, there’s been
+                                    a lot of
+                                    projects, both public and
+                                    private, that are attempting to create a next-generation blockchain or
+                                    something better than
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 secondslide">
+                            <img class="d-block w-100"
+                                src="http://digitalxgeeks.com/wp-content/uploads/2018/09/CyberSecurity.jpg"
+                                alt="First slide">
+                            <div>
+                                <h3 class="newsheading1" style="text-align: center; margin: auto;">BLOCKCHAIN AND THE
+                                    ENTERPRICE.BUT WHAT ABOUT SECURITY</h3>
+                                <hr style="background-color: violet; height:0px;">
+                                <p style="font-weight: 200; text-align: center;"> Our Security Maven Dave and Director
+                                    of Ecosystem,
+                                    Marta
+                                    recently
+                                    presented
+                                    the “Blockchain is the New Black, but What About Security?” webinar. It
+                                    was
+                                    a recap of a </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- right button -->
+    <a href="https://www.picktime.com/digitalxgeeks" targrt="_blank" style="position: fixed;
+  right: 0px; top: 55%;margin-top:-120px;float: none;">
+        <img src="https://www.picktime.com/bookingPage/img/picktime-book-online-right.png">
+    </a>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer1">
+                    <div class="footer-logo">
+                        <img src="http://digitalxgeeks.com/wp-content/themes/zerif-lite/images/map25-redish.png"
+                            alt="location icon">
+                    </div>
+                    <div class="details">
+                        6th Floor, Melange Towers Patrikanagar, Madhapur, Hitech City Hyderabad-500 081, INDIA
+                    </div>
+
+                </div>
+                <div class="col-md-3 footer1">
+                    <div class="email">
+
+                        contact@digitalxgeeks.com<br>
+                        91-7386080222
+
+                    </div>
+                </div>
+                <div class="c0l-md-3 footer1">
+                    <div class="dd">
+
+                        Privacy statement<br>
+                        Refund policy<br>
+                        Terms of service<br>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footer2 copyright">
+                    <div class="lastpart">
+                        Zerif Lite developed by ThemeIsle
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+body {
+    background-color: #708090;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif, 900 italic;
+    color: white;
+}
+
+p {
+    color: whitesmoke;
+}
+
+h2 {
+    color: whitesmoke;
+    padding: 0px 0px 10px;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+h4 {
+    color: whitesmoke;
+}
+
+hr {
+    border-top: solid black;
+}
+
+h6 {
+    color: white;
+}
+
+ul li {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.flex-behaviors {
+    padding: 10px 0px 0px;
+}
+
+.heading {
+    display:flex;
+    justify-content: center;
+    padding: 50px 0px;
+    color: white;
+}
+
+.white-text {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.behaviours li {
+    padding-bottom: 20px;
+}
+
+.container1 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.wrap1 {
+    display:inline-flex;
+    height: 20vh;
+    border: 5px solid black;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+}
+
+.wrap2 {
+    display:inline-flex;
+    height: 20vh;
+    border: 5px solid black;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.wrap3 {
+    display:inline-flex;
+    height: 20vh;
+    border: 5px solid black;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 100px;
+}
+
+.order-container {
+    display:inline-flex;
+    height: 11vh;
+    border: 5px solid black;
+    margin-bottom: 100px;
+}
+
+.box-1 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.box-2 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.box-3 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.box-4 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    order: 1;
+}
+
+.box-5 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
+}
+
+.box-6 {
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+

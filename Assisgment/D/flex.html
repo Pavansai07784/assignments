@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <title>FLEX - Property</title>
+</head>
+
+<body>
+    <section id="flex-container">
+
+        <h1 class="heading">
+            FLEX
+        </h1>
+        <div class="container">
+            <h3>Description</h3>
+            <hr>
+            <ul>
+                <li>Flex utility can be used to manage the layout, alignment, grid columns, navigation and other
+                    components
+                    of
+                    the page.</li>
+                <li> It makes easy to design layout structure without using float or positioning.</li>
+            </ul>
+
+
+            <h3 class="flex-behaviors">Flex Behaviors and Direction</h3>
+            <hr>
+            <ul class="behaviours">
+                <h4>Flex Behaviors </h4>
+                <li>The flexbox display utilities like d-flex and d-inline-flex to display the flexbox container and
+                    children
+                    elements into flex items. </li>
+                <div class="d-flex p-2 bg-light">
+                    <p class="white-text">This is flex container, uses the 'd-flex' class</p>
+                </div>
+                <br>
+                <a href="inline-flex.html">
+                    <div class="d-inline-flex p-2 bg-light">
+                        <p class="white-text">This is inline flexbox container, uses the 'd-inline-flex' class</p>
+                    </div>
+                </a>
+            </ul>
+
+
+
+            <h4>Flex Direction</h4>
+            <ul>
+                <li>You can set the direction of flex items in horizontal direction and vertical
+                    direction by using .flex-row (use .flex-row-reverse to display horizontal direction from the
+                    opposite
+                    side)
+                    and .flex-column (use .flex-column-reverse to display vertical direction from the opposite side)
+                    classes
+                    respectively as shown in the below example</li>
+            </ul>
+            <h5 style="text-align:center ;color: whitesmoke;padding:30px 0px 10px 0px; ">Horizontal Direction</h5>
+            <h6 style="padding-bottom: 15px;">Flex-row :</h6>
+            <div class="d-flex flex-row bg-light mb-3">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1
+                </div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2
+                </div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3
+                </div>
+            </div>
+            <h6 style="padding-bottom: 15px;">Flex-row-reverse :</h6>
+            <div class="d-flex flex-row-reverse bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">
+                    Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">
+                    Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">
+                    Item 3</div>
+            </div>
+            <br>
+
+            <h5 style="text-align: center;color: whitesmoke ; padding-top:15px;">Vertical Direction</h5>
+            <h6 style="padding-bottom:15px;">Flex-column:</h6>
+            <div class="d-flex flex-column bg-light mb-3">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1
+                </div>
+                <div class="p-2" style="background-color:#a9a9a9;color:black;">Item 2
+                </div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3
+                </div>
+            </div>
+            <h6 style="padding:15px 0px 15px 0px;">Flex-column-reverse:</h6>
+            <div class="d-flex flex-column-reverse bg-light">
+                <div class="p-2" style="background-color:#998066;color: #000000;">
+                    Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">
+                    Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">
+                    Item 3</div>
+            </div>
+
+            <h3 style="text-align: center; padding: 40px 0px;">Justify Content</h3>
+            <ul>
+                <li>The alignment of flex items (such as start, end, center, between and around) can be changed on the
+                    main axis (x-axis to start) of the flexbox containers by using justify-content utility.
+
+                    The following example demonstrates this −</li>
+            </ul>
+            <h2>Alignment - Start</h2>
+            <h6 style="color: white; padding: 0px 0px 10px 0px;">-justify-content-start:</h6>
+            <div class="d-flex justify-content-start bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3</div>
+            </div>
+            <br>
+
+            <h2>Alignment - End</h2>
+            <h6 style="color: whitesmoke; padding: 0px 0px 10px 0px;">-justify-content-end:</h6>
+            <div class="d-flex justify-content-end bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3</div>
+            </div>
+            <br>
+
+            <h2>Alignment - Center</h2>
+            <h6 style="color: whitesmoke; padding: 0px 0px 10px 0px;">-justify-content-center:</h6>
+            <div class="d-flex justify-content-center bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3</div>
+            </div>
+            <br>
+
+            <h2>Alignment - Between</h2>
+            <h6 style="color: whitesmoke; padding: 0px 0px 10px 0px;">-justify-content-between:</h6>
+            <div class="d-flex justify-content-between bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3</div>
+            </div>
+            <br>
+
+            <h2>Alignment - Around</h2>
+            <h6 style="color: whitesmoke; padding: 0px 0px 10px 0px;">-justify-content-around:</h6>
+            <div class="d-flex justify-content-around bg-light">
+                <div class="p-2" style="background-color:#998066;color: black;">Item 1</div>
+                <div class="p-2" style="background-color:#a9a9a9;color: black;">Item 2</div>
+                <div class="p-2" style="background-color:#696969;color: black;">Item 3</div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class=" container flex-wrap">
+        <h3 style="padding-bottom: 15px;text-align: center;margin-top: 50px;">Flex-wrap :</h3>
+
+
+        <h4>no-wrap:</h4>
+        <div class="wrap1">
+
+            <div class="container1">
+                <h5>item1</h5>
+            </div>
+            <div class="container1">
+                <h5>item2</h5>
+            </div>
+            <div class="container1">
+                <h5>item3</h5>
+            </div>
+            <div class="container1">
+                <h5>item4</h5>
+            </div>
+            <div class="container1">
+                <h5>item5</h5>
+            </div>
+            <div class="container1">
+                <h5>item6</h5>
+            </div>
+            <div class="container1">
+                <h5>item7</h5>
+            </div>
+            <div class="container1">
+                <h5>item8</h5>
+            </div>
+            <div class="container1">
+                <h5>item9</h5>
+            </div>
+            <div class="container1">
+                <h5>item10</h5>
+            </div>
+        </div>
+        <h4>wrap:</h4>
+        <div class="wrap2">
+
+            <div class="container1">
+                <h5>item1</h5>
+            </div>
+            <div class="container1">
+                <h5>item2</h5>
+            </div>
+            <div class="container1">
+                <h5>item3</h5>
+            </div>
+            <div class="container1">
+                <h5>item4</h5>
+            </div>
+            <div class="container1">
+                <h5>item5</h5>
+            </div>
+            <div class="container1">
+                <h5>item6</h5>
+            </div>
+            <div class="container1">
+                <h5>item7</h5>
+            </div>
+            <div class="container1">
+                <h5>item8</h5>
+            </div>
+            <div class="container1">
+                <h5>item9</h5>
+            </div>
+            <div class="container1">
+                <h5>item10</h5>
+            </div>
+
+        </div>
+        <h4>wrap-reverse:</h4>
+        <div class="wrap3">
+
+            <div class="container1">
+                <h5>item1</h5>
+            </div>
+            <div class="container1">
+                <h5>item2</h5>
+            </div>
+            <div class="container1">
+                <h5>item3</h5>
+            </div>
+            <div class="container1">
+                <h5>item4</h5>
+            </div>
+            <div class="container1">
+                <h5>item5</h5>
+            </div>
+            <div class="container1">
+                <h5>item6</h5>
+            </div>
+            <div class="container1">
+                <h5>item7</h5>
+            </div>
+            <div class="container1">
+                <h5>item8</h5>
+            </div>
+            <div class="container1">
+                <h5>item9</h5>
+            </div>
+            <div class="container1">
+                <h5>item10</h5>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" container order">
+        <h3 style="padding-bottom: 15px;text-align: center;margin-top: 50px;">Flex-order:</h3>
+        <h4 style="margin-bottom: 50px;">
+            <ul>
+                <li>The order property controls the order in which they appear in the flex container.</li>
+            </ul>
+        </h4>
+        <div class="order-container">
+            <div class="box-1">
+                <h5>item1</h5>
+            </div>
+            <div class="box-2">
+                <h5>item2</h5>
+            </div>
+            <div class="box-3">
+                <h5>item3</h5>
+            </div>
+        </div>
+
+        <div class="order-container">
+            <div class="box-4">
+                <h5>item1</h5>
+            </div>
+            <div class="box-5">
+                <h5>item2</h5>
+            </div>
+            <div class="box-6">
+                <h5>item3</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class=" container grow">
+        <h3 style="padding-bottom: 15px;text-align: center;margin-top: 50px;">Flex-Grow:</h3>
+        <h4 style="margin-bottom: 50px;">
+            <ul>
+                <li>It defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves
+                    as a proportion. It dictates what amount of the available space inside the flex container the item
+                    should take up.
+
+                </li>
+            </ul>
+        </h4>
+
+        <div class="example-container">
+            <div class="e-1">
+                <h5>item1</h5>
+            </div>
+            <div class="e-2">
+                <h5>item2</h5>
+            </div>
+            <div class="e-3">
+                <h5>item3</h5>
+            </div>
+            <div class="e-4">
+                <h5>item4</h5>
+            </div>
+        </div>
+
+        <div class="Grow-container">
+
+
+            <div class="grow-1">
+                <h5>item1</h5>
+            </div>
+            <div class="grow-2">
+                <h5>item2</h5>
+            </div>
+            <div class="grow-3">
+                <h5>item3</h5>
+            </div>
+            <div class="grow-4">
+                <h5>item4</h5>
+            </div>
+        </div>
+        <div class="Grow-container">
+
+
+            <div class="grow-5">
+                <h5>item1</h5>
+            </div>
+            <div class="grow-6">
+                <h5>item2</h5>
+            </div>
+            <div class="grow-7">
+                <h5>item3</h5>
+            </div>
+            <div class="grow-8">
+                <h5>item4</h5>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3 style="text-align: center;">Aligning-items</h3>
+    <div class="container align-items">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-items-center:</h4>
+    <div class="container align-items1">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-items-flex-end:</h4>
+    <div class="container align-items2">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-items-flex-start:</h4>
+    <div class="container align-items3">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    
+    <h4 style="text-align: center;margin: 20px 0px;">           align-items-stretch:</h4>
+    <div class="container align-items4">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-items-baseline:</h4>
+    <div class="container align-items5">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <hr>
+    <h3 style="text-align: center;">Aligning-Content</h3>
+    <h4 style="text-align: center;margin: 20px 0px;">align-content-center:</h4>
+    <div class="container align-content1">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-content-flex-end:</h4>
+    <div class="container align-content2">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-content-flex-start:</h4>
+    <div class="container align-content3">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-content-stretch:</h4>
+    <div class="container align-content4">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-content-space-between:</h4>
+    <div class="container align-content5">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <h4 style="text-align: center;margin: 20px 0px;">align-content-space-around:</h4>
+    <div class="container align-content6">
+        <img src="https://images.unsplash.com/photo-1561902636-0e918139734e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8Ym84alFLVGFFMFl8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609968830325-fd422e0744c2?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609986227722-58471b6ad2c4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8eEh4WVRNSExnT2N8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1601037055952-0651d4833621?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc2fGJvOGpRS1RhRTBZfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1609875272944-2123c03a1f6d?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8aG1lbnZRaFVteE18fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="">
+    </div>
+    <div class="image-container">
+        <h1>Example while using flex-property</h1>
+        <div class="flex-images">
+            <div class="img2">
+                <img src="https://images.unsplash.com/photo-1605169357535-5d50e52ca9c6?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="img3">
+                <img src="https://images.unsplash.com/photo-1571915096107-c6606c216058?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="img4">
+                <img src="https://images.unsplash.com/photo-1609894783775-d9327386b1ea?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDd8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+        </div>
+        <h1 style="padding-top: 50px;">without using flex-property</h1>
+        <div class="images">
+            <div class="img2">
+                <img src="https://images.unsplash.com/photo-1605169357535-5d50e52ca9c6?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fHRvd0paRnNrcEdnfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="img3">
+                <img src="https://images.unsplash.com/photo-1571915096107-c6606c216058?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="img4">
+                <img src="https://images.unsplash.com/photo-1609894783775-d9327386b1ea?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDd8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
